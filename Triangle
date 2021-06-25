@@ -1,0 +1,17 @@
+a = int(input())
+b = int(input())
+c = int(input())
+if a < b + c and b < a + c and c < a + b:
+    from statistics import mean, median
+    triangle = [a, b, c]
+    medianside = median(triangle)
+    maxside = max(triangle)
+    minside = min(triangle)
+    if maxside **2 == minside **2 + medianside **2:
+        print("Right Triangle")
+    if maxside **2 > medianside **2+ minside **2:
+        print("Obtuse Triangle")
+    if maxside **2 < minside **2 + medianside **2:
+        print("Acute Triangle")
+
+else: print("No Triangle")
