@@ -1,0 +1,8 @@
+n = int(input())
+angam=1
+while n>0:
+    digit = n%10
+    if digit!=0:
+        angam=angam*digit
+        n=n//10
+print(angam)
