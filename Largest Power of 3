@@ -1,0 +1,7 @@
+n = int(input())
+N=0
+while n>=3**N:
+    kik = 3 ** N
+    N+=1
+
+print(kik)
